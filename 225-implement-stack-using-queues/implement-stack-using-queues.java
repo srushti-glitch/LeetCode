@@ -9,9 +9,9 @@ Queue<Integer> q2;
     }
     
     public void push(int x) {
-      q2.add(x);
+      q2.offer(x);
       while(!q1.isEmpty()){
-        q2.add(q1.poll());
+        q2.offer(q1.poll());
       } 
       Queue<Integer> temp=q1;
       q1=q2;
